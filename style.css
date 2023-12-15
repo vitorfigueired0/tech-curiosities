@@ -1,0 +1,157 @@
+/* Importação de fontes */
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+/* Definição de font-face */
+@font-face {
+  font-family: 'Idroid';
+  src: url(fonts/idroid.otf);
+}
+
+/* Estilos gerais do body */
+body {
+  background-color: #E9E6C3;
+  margin: 0;
+}
+
+/* Estilos do cabeçalho */
+header {
+  background-image: linear-gradient(#259557 25%, #1A7D45 , #115C30, #04411F, #043D1D);
+  margin: 0;
+  padding: 25px 10px 7px 10px;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.493);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font: normal 2.4em 'Bebas Neue';
+  margin: 0;
+}
+
+nav {
+  text-align: left;
+  padding: 1px 10px 1px 0px;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+nav > a {
+  text-decoration: none;
+  color: #37d47e;
+  margin-right: 5px;
+  font-weight: bold;
+  font-size: 0.85em;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.25s;
+}
+
+nav > a:hover {
+  background-color: #259557 ;
+  color: #04411F;
+  transition: background-color 0.25s;
+}
+
+/* Estilos para a seção principal */
+main {
+  margin: 0 100px;
+  background-color: white;
+  margin-top: 0;
+}
+
+#main_h2 {
+  margin-top: 0;
+  padding-top: 15px;
+}
+
+/* Estilos para as seções */
+section {
+  margin: 0 15px;
+}
+
+h2, h3 {
+  font-family: 'Idroid';
+  font-weight: 300;
+}
+
+/* Estilo do fundo com gradiente */
+.gradient_backgroud {
+  background-image: linear-gradient(to right, #8BE0B5, #A5E8C0, #C6F3D7, #DDF6E7, #EEFAF2);
+  color: #114e29;
+}
+
+p {
+  margin: 0;
+}
+
+/* Estilos para links e âncoras */
+section > p {
+  text-indent: 4%;
+  font-size: 1.1em;
+  text-align: justify;
+  line-height: 1.9em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+}
+
+p > a {
+  text-decoration: none;
+  background-color: #8BE0B5;
+  font-weight: bold;
+  color: #114e29;
+}
+
+p > a::after {
+  content: " \1F517";
+}
+
+/* Estilos para a seção "know_more" */
+#know_more {
+  border-radius: 10px;
+  background-color: #81E2AB;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.76);
+}
+
+h4 {
+  font: bolder 1.45em 'DM Sans', 'Arial', 'Sans-serif';
+  background-color: #185C36;
+  font-size: 1.25em;
+  color: white;
+  margin: 0;
+  padding: 5.2px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+#know_more > p, li {
+  font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+}
+
+#know_more > p {
+  margin: 20px;
+  font-size: 1em;
+  font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+}
+
+/* Estilos para a lista de versões do Android */
+.android-versions {
+  column-count: 2; /* Dividir em duas colunas */
+  column-gap: 20px; /* Espaçamento entre as colunas */
+}
+
+/* Estilos para imagens e iframes */
+img, iframe {
+  margin: auto;
+  display: block;
+}
+
+/* Estilos para o rodapé */
+footer {
+  background-color: #022A14;
+  text-align: center;
+  margin: 0 100px;
+  color: white;
+}
